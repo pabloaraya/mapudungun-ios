@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,12 +17,104 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-1k-HDb">
+                                <rect key="frame" x="16" y="20" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="rsS-JY-4Ms"/>
+                                </constraints>
+                                <state key="normal" title="Español">
+                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EMx-B5-tWd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuS-Gl-Pf0">
+                                <rect key="frame" x="184" y="20" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jx9-A8-rPh"/>
+                                </constraints>
+                                <state key="normal" title="Mapudungun">
+                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mCr-SC-Kbu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6m-nh-y7S">
+                                <rect key="frame" x="16" y="58" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtWordsEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Iih-CN-pFB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISA-tw-mEl">
+                                <rect key="frame" x="16" y="118" width="288" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5j-XJ-StL">
+                                <rect key="frame" x="146" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="5Uk-Kf-rJw"/>
+                                    <constraint firstAttribute="width" constant="31" id="KGx-Zb-IuM"/>
+                                    <constraint firstAttribute="width" secondItem="B5j-XJ-StL" secondAttribute="height" multiplier="1:1" id="Loa-dQ-clz"/>
+                                    <constraint firstAttribute="width" constant="30" id="XBV-LY-xBJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="Yp7-Tu-tOj"/>
+                                    <constraint firstAttribute="height" constant="30" id="cOB-xZ-LCF"/>
+                                    <constraint firstAttribute="height" constant="30" id="nng-NK-bTF"/>
+                                </constraints>
+                                <state key="normal" image="change.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Uk-Kf-rJw"/>
+                                        <exclude reference="KGx-Zb-IuM"/>
+                                        <exclude reference="cOB-xZ-LCF"/>
+                                        <exclude reference="nng-NK-bTF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnChange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aAu-wG-kcy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="B5j-XJ-StL" secondAttribute="centerX" constant="-1" id="3Ly-Dy-21h"/>
+                            <constraint firstItem="w6m-nh-y7S" firstAttribute="top" secondItem="B5j-XJ-StL" secondAttribute="bottom" id="Mx1-do-mxM"/>
+                            <constraint firstItem="ISA-tw-mEl" firstAttribute="trailing" secondItem="w6m-nh-y7S" secondAttribute="trailing" id="Np8-wJ-uHN"/>
+                            <constraint firstItem="fuS-Gl-Pf0" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="PTu-3Y-CvP"/>
+                            <constraint firstItem="w6m-nh-y7S" firstAttribute="top" secondItem="G8Z-1k-HDb" secondAttribute="bottom" constant="8" symbolic="YES" id="UTF-8x-rv3"/>
+                            <constraint firstItem="w6m-nh-y7S" firstAttribute="leading" secondItem="ISA-tw-mEl" secondAttribute="leading" id="XGd-Mg-UQa"/>
+                            <constraint firstItem="B5j-XJ-StL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Yut-ls-m6S"/>
+                            <constraint firstItem="G8Z-1k-HDb" firstAttribute="leading" secondItem="w6m-nh-y7S" secondAttribute="leading" id="a1i-H4-Twx"/>
+                            <constraint firstItem="fuS-Gl-Pf0" firstAttribute="baseline" secondItem="G8Z-1k-HDb" secondAttribute="baseline" id="bFv-dx-ETz"/>
+                            <constraint firstItem="w6m-nh-y7S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eUb-8z-V4F"/>
+                            <constraint firstItem="ISA-tw-mEl" firstAttribute="top" secondItem="w6m-nh-y7S" secondAttribute="bottom" constant="30" id="evz-Y5-hyp"/>
+                            <constraint firstItem="fuS-Gl-Pf0" firstAttribute="trailing" secondItem="w6m-nh-y7S" secondAttribute="trailing" id="hjg-ED-Iua"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnLeft" destination="G8Z-1k-HDb" id="V0x-XV-ft0"/>
+                        <outlet property="btnRight" destination="fuS-Gl-Pf0" id="MVV-SY-lDj"/>
+                        <outlet property="lblResult" destination="ISA-tw-mEl" id="rgy-nY-hFy"/>
+                        <outlet property="txtWords" destination="w6m-nh-y7S" id="55c-Ml-MD0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="302"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="change.png" width="100" height="100"/>
+    </resources>
 </document>
