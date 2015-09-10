@@ -24,6 +24,7 @@
 		8AFA775A1B8EA7D800BA2348 /* ic_launcher_xxhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA77591B8EA7D800BA2348 /* ic_launcher_xxhdpi.png */; };
 		8AFA775C1B8EA7E100BA2348 /* ic_launcher_xhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA775B1B8EA7E100BA2348 /* ic_launcher_xhdpi.png */; };
 		8AFA775E1B8EA7E700BA2348 /* ic_launcher_mdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA775D1B8EA7E700BA2348 /* ic_launcher_mdpi.png */; };
+		FA24849F4EBB21D27F112C57 /* Pods_Mapudungun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8BDA7800F47CD3C3433A09 /* Pods_Mapudungun.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040543ABF5E2892346ADE8AA /* Pods-Mapudungun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapudungun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapudungun/Pods-Mapudungun.debug.xcconfig"; sourceTree = "<group>"; };
+		0E51ED5C6B4FBAE1E175CE97 /* Pods-Mapudungun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapudungun.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapudungun/Pods-Mapudungun.release.xcconfig"; sourceTree = "<group>"; };
 		6EEC25831B84DEBF00E6A6AB /* Mapudungun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapudungun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEC25871B84DEBF00E6A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EEC25881B84DEBF00E6A6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		8AFA77591B8EA7D800BA2348 /* ic_launcher_xxhdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxhdpi.png; sourceTree = "<group>"; };
 		8AFA775B1B8EA7E100BA2348 /* ic_launcher_xhdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xhdpi.png; sourceTree = "<group>"; };
 		8AFA775D1B8EA7E700BA2348 /* ic_launcher_mdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_mdpi.png; sourceTree = "<group>"; };
+		8B8BDA7800F47CD3C3433A09 /* Pods_Mapudungun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mapudungun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA24849F4EBB21D27F112C57 /* Pods_Mapudungun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,8 @@
 				6EEC259B1B84DEBF00E6A6AB /* MapudungunTests */,
 				6EEC25841B84DEBF00E6A6AB /* Products */,
 				8AFA77521B8EA5E800BA2348 /* Assets */,
+				B7B93AD5A517A16E60EB177E /* Frameworks */,
+				D5DA195B292A1D18972850E0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +164,23 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		B7B93AD5A517A16E60EB177E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B8BDA7800F47CD3C3433A09 /* Pods_Mapudungun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DA195B292A1D18972850E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				040543ABF5E2892346ADE8AA /* Pods-Mapudungun.debug.xcconfig */,
+				0E51ED5C6B4FBAE1E175CE97 /* Pods-Mapudungun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EEC25A21B84DEBF00E6A6AB /* Build configuration list for PBXNativeTarget "Mapudungun" */;
 			buildPhases = (
+				9E9C75531AE5C431FEC3919F /* Check Pods Manifest.lock */,
 				6EEC257F1B84DEBF00E6A6AB /* Sources */,
 				6EEC25801B84DEBF00E6A6AB /* Frameworks */,
 				6EEC25811B84DEBF00E6A6AB /* Resources */,
+				A212F348F527616FC5752781 /* Embed Pods Frameworks */,
+				70EA28524A8F78C5A8BAC9E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +289,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70EA28524A8F78C5A8BAC9E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapudungun/Pods-Mapudungun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E9C75531AE5C431FEC3919F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A212F348F527616FC5752781 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapudungun/Pods-Mapudungun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EEC257F1B84DEBF00E6A6AB /* Sources */ = {
@@ -394,6 +469,7 @@
 		};
 		6EEC25A31B84DEBF00E6A6AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040543ABF5E2892346ADE8AA /* Pods-Mapudungun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mapudungun/Info.plist;
@@ -404,6 +480,7 @@
 		};
 		6EEC25A41B84DEBF00E6A6AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E51ED5C6B4FBAE1E175CE97 /* Pods-Mapudungun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mapudungun/Info.plist;
