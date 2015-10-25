@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func txtWordsEditingChanged(sender: UITextField) {
-        call(sender.text)
+        call(sender.text!)
     }
 
     func call(word: NSString){
@@ -55,14 +55,19 @@ class ViewController: UIViewController {
             
             let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
                 
-                let result = JSON(data: data)
+                let result = JSON(data: data!)
                 //Pregunto si la respuesta es statusCode 200 para mostrar resultado
-                switch(result["statusCode"]){
+                switch(result["statusCode"].intValue){
                     case 200:
-                        if(result["status"] == "success"){
+                        if(result["status"].stringValue == "success"){
                             //Show array result
                             var message = ""
-                            for (key: String, subJson: JSON) in result["message"] {
+                            print("vamos")
+                            print(result["message"])
+                            for (key,subJson):(String, JSON) in result["message"] {
+                                message = "algo"
+                                print(subJson)
+                                print(key)
                                 if (message == ""){
                                     message = message + subJson.stringValue
                                 }else{
@@ -92,12 +97,12 @@ class ViewController: UIViewController {
 
     }
     
-    func parseJSON(inputData: NSData) -> NSDictionary{
-        var error: NSError?
-        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
-        
-        return boardsDictionary
-    }
+//    func parseJSON(inputData: NSData) -> NSDictionary{
+//        var error: NSError?
+//        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
+//        
+//        return boardsDictionary
+//    }
     
     func change(){
         if (from == "spanish" && to == "mapudungun"){
@@ -117,7 +122,7 @@ class ViewController: UIViewController {
             btnRight.setTitle("Mapudungun", forState: UIControlState.Normal)
         }
         //Volvemos a buscar
-        call(txtWords.text)
+        call(txtWords.text!)
     }
 }
 

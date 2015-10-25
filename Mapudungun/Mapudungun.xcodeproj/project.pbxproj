@@ -24,7 +24,7 @@
 		8AFA775A1B8EA7D800BA2348 /* ic_launcher_xxhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA77591B8EA7D800BA2348 /* ic_launcher_xxhdpi.png */; };
 		8AFA775C1B8EA7E100BA2348 /* ic_launcher_xhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA775B1B8EA7E100BA2348 /* ic_launcher_xhdpi.png */; };
 		8AFA775E1B8EA7E700BA2348 /* ic_launcher_mdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA775D1B8EA7E700BA2348 /* ic_launcher_mdpi.png */; };
-		FA24849F4EBB21D27F112C57 /* Pods_Mapudungun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8BDA7800F47CD3C3433A09 /* Pods_Mapudungun.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA24849F4EBB21D27F112C57 /* Pods_Mapudungun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8BDA7800F47CD3C3433A09 /* Pods_Mapudungun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +228,7 @@
 		6EEC257B1B84DEBF00E6A6AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Pablo Araya Romero";
 				TargetAttributes = {
