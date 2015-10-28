@@ -62,12 +62,7 @@ class ViewController: UIViewController {
                         if(result["status"].stringValue == "success"){
                             //Show array result
                             var message = ""
-                            print("vamos")
-                            print(result["message"])
-                            for (key,subJson):(String, JSON) in result["message"] {
-                                message = "algo"
-                                print(subJson)
-                                print(key)
+                            for (_,subJson):(String, JSON) in result["words"] {
                                 if (message == ""){
                                     message = message + subJson.stringValue
                                 }else{
@@ -96,13 +91,6 @@ class ViewController: UIViewController {
         }
 
     }
-    
-//    func parseJSON(inputData: NSData) -> NSDictionary{
-//        var error: NSError?
-//        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
-//        
-//        return boardsDictionary
-//    }
     
     func change(){
         if (from == "spanish" && to == "mapudungun"){

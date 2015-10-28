@@ -13,6 +13,11 @@
 		6EEC25901B84DEBF00E6A6AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC258F1B84DEBF00E6A6AB /* Images.xcassets */; };
 		6EEC25931B84DEBF00E6A6AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC25911B84DEBF00E6A6AB /* LaunchScreen.xib */; };
 		6EEC259F1B84DEBF00E6A6AB /* MapudungunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC259E1B84DEBF00E6A6AB /* MapudungunTests.swift */; };
+		8A29BF631BDC79F10053E033 /* ic_launcher_xxxhdpi_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A29BF611BDC79F10053E033 /* ic_launcher_xxxhdpi_120.png */; };
+		8A29BF641BDC79F10053E033 /* ic_launcher_xxxhdpi_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A29BF621BDC79F10053E033 /* ic_launcher_xxxhdpi_180.png */; };
+		8A29BF681BDC7A6C0053E033 /* ic_launcher_xxxhdpi_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A29BF651BDC7A6C0053E033 /* ic_launcher_xxxhdpi_58.png */; };
+		8A29BF691BDC7A6C0053E033 /* ic_launcher_xxxhdpi_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A29BF661BDC7A6C0053E033 /* ic_launcher_xxxhdpi_80.png */; };
+		8A29BF6A1BDC7A6C0053E033 /* ic_launcher_xxxhdpi_87.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A29BF671BDC7A6C0053E033 /* ic_launcher_xxxhdpi_87.png */; };
 		8AFA774C1B8EA5D800BA2348 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA77461B8EA5D800BA2348 /* background.png */; };
 		8AFA774D1B8EA5D800BA2348 /* change.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA77471B8EA5D800BA2348 /* change.png */; };
 		8AFA774E1B8EA5D800BA2348 /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFA77481B8EA5D800BA2348 /* restart.png */; };
@@ -50,6 +55,11 @@
 		6EEC25981B84DEBF00E6A6AB /* MapudungunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapudungunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEC259D1B84DEBF00E6A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EEC259E1B84DEBF00E6A6AB /* MapudungunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapudungunTests.swift; sourceTree = "<group>"; };
+		8A29BF611BDC79F10053E033 /* ic_launcher_xxxhdpi_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxxhdpi_120.png; sourceTree = "<group>"; };
+		8A29BF621BDC79F10053E033 /* ic_launcher_xxxhdpi_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxxhdpi_180.png; sourceTree = "<group>"; };
+		8A29BF651BDC7A6C0053E033 /* ic_launcher_xxxhdpi_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxxhdpi_58.png; sourceTree = "<group>"; };
+		8A29BF661BDC7A6C0053E033 /* ic_launcher_xxxhdpi_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxxhdpi_80.png; sourceTree = "<group>"; };
+		8A29BF671BDC7A6C0053E033 /* ic_launcher_xxxhdpi_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher_xxxhdpi_87.png; sourceTree = "<group>"; };
 		8AFA77461B8EA5D800BA2348 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8AFA77471B8EA5D800BA2348 /* change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = change.png; sourceTree = "<group>"; };
 		8AFA77481B8EA5D800BA2348 /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restart.png; sourceTree = "<group>"; };
@@ -153,6 +163,11 @@
 				8AFA77491B8EA5D800BA2348 /* share.png */,
 				8AFA774A1B8EA5D800BA2348 /* star_outline.png */,
 				8AFA774B1B8EA5D800BA2348 /* star.png */,
+				8A29BF611BDC79F10053E033 /* ic_launcher_xxxhdpi_120.png */,
+				8A29BF621BDC79F10053E033 /* ic_launcher_xxxhdpi_180.png */,
+				8A29BF651BDC7A6C0053E033 /* ic_launcher_xxxhdpi_58.png */,
+				8A29BF661BDC7A6C0053E033 /* ic_launcher_xxxhdpi_80.png */,
+				8A29BF671BDC7A6C0053E033 /* ic_launcher_xxxhdpi_87.png */,
 				8AFA77531B8EA6CA00BA2348 /* Roboto-Light.ttf */,
 				8AFA77541B8EA6CA00BA2348 /* Roboto-Regular.ttf */,
 				8AFA77551B8EA7B600BA2348 /* ic_launcher_hdpi.png */,
@@ -272,13 +287,18 @@
 				8AFA774E1B8EA5D800BA2348 /* restart.png in Resources */,
 				8AFA77511B8EA5D800BA2348 /* star.png in Resources */,
 				6EEC258E1B84DEBF00E6A6AB /* Main.storyboard in Resources */,
+				8A29BF6A1BDC7A6C0053E033 /* ic_launcher_xxxhdpi_87.png in Resources */,
 				8AFA774F1B8EA5D800BA2348 /* share.png in Resources */,
 				8AFA775C1B8EA7E100BA2348 /* ic_launcher_xhdpi.png in Resources */,
+				8A29BF691BDC7A6C0053E033 /* ic_launcher_xxxhdpi_80.png in Resources */,
 				8AFA77501B8EA5D800BA2348 /* star_outline.png in Resources */,
 				8AFA774C1B8EA5D800BA2348 /* background.png in Resources */,
+				8A29BF681BDC7A6C0053E033 /* ic_launcher_xxxhdpi_58.png in Resources */,
 				6EEC25931B84DEBF00E6A6AB /* LaunchScreen.xib in Resources */,
+				8A29BF631BDC79F10053E033 /* ic_launcher_xxxhdpi_120.png in Resources */,
 				8AFA77561B8EA7B600BA2348 /* ic_launcher_hdpi.png in Resources */,
 				6EEC25901B84DEBF00E6A6AB /* Images.xcassets in Resources */,
+				8A29BF641BDC79F10053E033 /* ic_launcher_xxxhdpi_180.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +494,7 @@
 			baseConfigurationReference = 040543ABF5E2892346ADE8AA /* Pods-Mapudungun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Mapudungun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pabloaraya.$(PRODUCT_NAME:rfc1034identifier)";
@@ -486,6 +507,7 @@
 			baseConfigurationReference = 0E51ED5C6B4FBAE1E175CE97 /* Pods-Mapudungun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Mapudungun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pabloaraya.$(PRODUCT_NAME:rfc1034identifier)";
